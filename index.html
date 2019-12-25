@@ -10,10 +10,6 @@
     <script defer src="js/dist/main.js"></script>
     <script src="https://kit.fontawesome.com/d56088cc92.js" crossorigin="anonymous"></script>
     <title>~</title>
-<script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
-</script>
 	</head>
 <body>
 	<p id="datetime"></p>
@@ -73,6 +69,13 @@ document.getElementById("datetime").innerHTML = dt.toLocaleString();
 			<li class="item"><a class="link" href="https://unblockit.ca/">UnblockIt</a></li>
         </ol>
     </div>
+	
+	<p>Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
 
 </body>
 </html>
