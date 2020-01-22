@@ -1,286 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-        <meta charset="utf-8">
-        <title>VRP Loading Screen</title>
-        <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-        <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
-        <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700" rel="stylesheet" type="text/css"><!-- google fonts end -->
-        <script src="https://kit.fontawesome.com/3e2d5ff50d.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class='cursor' id="cursor"></div>
-        <div class='cursor2' id="cursor2"></div>
-        <div class='cursor3' id="cursor3"></div>
-        <div class="preloader-bg"></div>
-        <div id="preloader">
-            <div id="preloader-status">
-                <div class="preloader-position loader">
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div class="menu-trigger top-position" id="menu-mobile-btn">
-            <button class="lines-button minus menu-toggle" id="menu-mobile-caller" type="button"><span class="lines inverse"></span></button>
-        </div>
-        <div id="ui-layer">
-            <div id="menu-wrapper">
-                <div id="menu-mobile">
-                    <div class="menu-nav-wrapper">
-                        <nav class="menu-nav">
-                            <ul>
-                                <li class="menu-mobile">
-                                    <a class="menu-state link-underline-menu active call-home" data-page="home">Main</a>
-                                </li>
-                                <li class="menu-mobile">
-                                    <a class="menu-state link-underline-menu call-page" data-page="about">Rules</a>
-                                </li>
-                                <li class="menu-mobile">
-                                    <a class="menu-state link-underline-menu call-page" data-page="services">Most Wanted</a>
-                                </li>
-                                  <li class="menu-mobile">
-                                    <a class="menu-state link-underline-menu call-page" data-page="discord">Discord</a>
-                                </li>
-                                <li class="credits">
-                                    <a>For the community.</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="the-borders border-top top-position"></div>
-        <div class="the-borders border-left left-position"></div>
-        <div class="the-borders border-right right-position"></div>
-        <div class="the-borders border-bottom bottom-position"></div>
-        <canvas class="bottom-position" id="wave"></canvas>
-        <div class="the-bottom-credits bottom-position">
-            <div class="bottom-credits">
-                <a href="#">Please wait</a>
-            </div>
-        </div>
-        <div class="hero-fullscreen">
-            <div class="hero-fullscreen-FIX">
-                <div class="hero-bg overlay overlay-dark-65-video">
-                    <div id="videoContainment">
-                        <div class="player" data-property=
-                        "{videoURL: 'yNcF49JPexw', containment: '#videoContainment', showControls: false, autoPlay: true, loop: true, vol: 50, mute: false, startAt: 0, stopAt: 0, opacity: 1, addRaster: true, quality: 'large', optimizeDisplay: true, ratio: 16/9}"
-                        id="bgndVideo"></div>
-                    </div>
-                    <div class="YT-bg"></div>
-                </div>
-            </div>
-        </div>
-        <div id="pages">
-            <div class="upper-page current page" data-page="home" id="home">
-                <div class="center-container-home">
-                    <div class="center-block-home">
-                        <div class="upper-content">
-                            <div class="container sections-home">
-                                <div class="row introduction">
-                                    <h2 class="home-page-title fadeIn-element">
-                                     <img src="image/logo.png" alt="lowgo">   
-                                    </h2>
-                                    <div class="inner-divider-half"></div>
-                                    <h1 class="home-page-title fadeIn-element">
-                                        Visceral RP
-                                    </h1>
+<html lang="en">
 
-                                    <div class="inner-divider-half"></div>
-                                    <div class="button-the-wrapper fadeIn-element">
-                                       
-                                        <a>Loading</a>
-                                         <img src="image/loading.gif" width="15" height="5" alt="lowding"> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="lower-page page hide" data-page="about" id="about">
-                <div class="center-container">
-                    <div class="center-block">
-                        <div class="lower-content">
-                            <div class="container sections">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12">
-                                        <h2 class="section-subheading">
-                                            <span>MAIN</span>
-                                        </h2>
-                                        <div class="inner-divider-half"></div>
-                                        <h2 class="section-heading">
-                                            RULES
-                                        </h2>
-                                        <div class="inner-divider-full"></div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="about-number-title">
-                                            #1
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <h4 class="about-heading">
-                                            Dont be a idiot
-                                        </h4>
-                                        <div class="inner-divider"></div>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's dummy text ever <a class="link-underline">since the 1500s</a>.
-                                        </p>
-                                        <div class="inner-divider visible-mobile-devices"></div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="about-number-title">
-                                            #2
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <h4 class="about-heading">
-                                            Dont pratice anti-rp
-                                        </h4>
-                                        <div class="inner-divider"></div>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's dummy text ever <a class="link-underline">since the 1500s</a>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="lower-page page hide" data-page="services" id="services">
-                <div class="center-container">
-                    <div class="center-block">
-                        <div class="lower-content">
-                            <div class="container sections">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12">
-                                        <h2 class="section-subheading">
-                                            <span>Kill on sight</span>
-                                        </h2>
-                                        <div class="inner-divider-half"></div>
-                                        <h2 class="section-heading">
-                                            MOST WANTED
-                                        </h2>
-                                        <div class="inner-divider-full"></div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                        <div class="service-number-title">
-                                            <img src="https://i.imgur.com/0eGAS3y.png" alt="face">
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <div class="show-skillbar">
-                                            <div class="skillbar" data-percent="80%">
-                                                <span class="skillbar-title">Carrottop</span>
-                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
-                                            </div>
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and <a class="link-underline">typesetting industry</a>.
-                                        </p>
-                                        <div class="inner-divider visible-mobile-devices"></div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                        <div class="service-number-title">
-                                            <img src="https://i.imgur.com/0eGAS3y.png" alt="face">
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <div class="show-skillbar">
-                                            <div class="skillbar" data-percent="33">
-                                                <span class="skillbar-title">Sum Yung Gai</span>
-                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
-                                            </div>
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and <a class="link-underline">typesetting industry</a>.
-                                        </p>
-                                        <div class="inner-divider visible-mobile-devices"></div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                        <div class="service-number-title">
-                                            <img src="https://i.imgur.com/0eGAS3y.png" alt="face">
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <div class="show-skillbar">
-                                            <div class="skillbar" data-percent="10">
-                                                <span class="skillbar-title">Mickle Pickle</span>
-                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
-                                            </div>
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and <a class="link-underline">typesetting industry</a>.
-                                        </p>
-                                        <div class="inner-divider visible-mobile-devices"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="lower-page page hide" data-page="discord" id="discord">
-                <div class="center-container">
-                    <div class="center-block">
-                        <div class="lower-content">
-                            <div class="container sections">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12">
-                                        <h2 class="section-subheading">
-                                            <span>Discorduu</span>
-                                        </h2>
-                                        <div class="inner-divider-half"></div>
-                                        <h2 class="section-heading">
-                                            JOIN US ON DISCORD
-                                        </h2>
-                                        <div class="inner-divider-full"></div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                        <div class="service-number-title">
-                                            <i class="fab fa-discord"></i>
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <div class="show-skillbar">
-                                            <div class="skillbar" data-percent="100">
-                                                <span class="skillbar-title">Visceral RP Discord</span>
-                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
-                                            </div>
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <p>
-                                            This is for those that were wronged in other cities, this is for all those that couldn’t deal with corruption and “excuses” most of all.. this is for the people. We choose you before we even choose ourselves.. we’re here to make everything right and everyone happy. <a class="link-underline">Join the discord</a>.
-                                        </p>
-                                        <div class="inner-divider visible-mobile-devices"></div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                        <div class="service-number-title">
-                                            <i class="fab fa-discord"></i>
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <div class="show-skillbar">
-                                            <div class="skillbar" data-percent="30">
-                                                <span class="skillbar-title">Visceral</span>
-                                                <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
-                                            </div>
-                                        </div>
-                                        <div class="inner-divider"></div>
-                                        <p>
-                                            The Non RP server that started it all, we're an Australian and New Zealand discord server! - But we accept everyone from All Countries! The server was created by gamers for gamers, we have 600+ members and are growing daily. Many who have joined have called our server their home. We listen to our members and provide everything including the kitchen sink to keep things different. <a class="link-underline">Join the discord</a>.
-                                        </p>
-                                        <div class="inner-divider visible-mobile-devices"></div>
-                                    </div>
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="js/plugins.js"></script> 
-        <script src="js/yume.js"></script>
-    </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="res/placeholder.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/dist/main.js"></script>
+    <script src="https://kit.fontawesome.com/d56088cc92.js" crossorigin="anonymous"></script>
+    <title>~</title>
+	</head>
+<body>
+	
+    	<h1 id="greeting"></h1>
+	<h1 id="date"></h1>
+
+    <div class="container">
+        <ol>
+            <li><h3 class="containerTitle s1Title">Routine</h3></li>
+            <div class="line s1Line"></div>
+			<li class="item"><a class="link" href="https://keep.google.com/#home">Keep</a></li>
+			<li class="item"><a class="link" href="http://twitch.tv">Twitch</a></li>
+			<li class="item"><a class="link" href="https://youtube.com/feed/subscriptions">YouTube</a></li>
+			<li class="item"><a class="link" href="https://theverge.com/">The Verge</a></li>
+			<li class="item"><a class="link" href="https://www.ghacks.net/">Ghacks</a></li>
+			<li class="item"><a class="link" href="http://dribbble.com/">Dribbble</a></li>
+			<li class="item"><a class="link" href="https://thenextweb.com/">The Next Web</a></li>
+			<li class="item"><a class="link" href="https://www.ign.com/">IGN</a></li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <ol>
+            <li><h3 class="containerTitle s2Title">Social</h3></li>
+            <div class="line s2Line"></div>
+			<li class="item"><a class="link" href="https://gmail.com/">Email</a></li>
+			<li class="item"><a class="link" href="https://Reddit.com/">Reddit</a></li>
+			<li class="item"><a class="link" href="https://giphy.com/">Giphy</a></li>
+				<li class="item"><a class="link" href="https://twitter.com/">Twitter</a></li>
+                        <li class="item"><a class="link" href="https://messenger.com/">Messenger</a></li>
+			<li class="item"><a class="link" href="https://www.instagram.com">Instagram</a></li>
+                        <li class="item"><a class="link" href="https://web.whatsapp.com/">WhatsApp</a></li>
+			<li class="item"><a class="link" href="https://tinder.com/">Tinder</a></li>
+
+        </ol>
+    </div>
+
+    <div class="container">
+        <ol>
+            <li><h3 class="containerTitle s3Title">Shopping</h3></li>
+            <div class="line s3Line"></div>
+			<li class="item"><a class="link" href="http://amazon.com/">Amazon</a></li>
+            <li class="item"><a class="link" href="https://open.spotify.com/">Ebay</a></li>
+            <li class="item"><a class="link" href="https://www.ebgames.com.au/">EBgames</a></li>
+            <li class="item"><a class="link" href="https://www.jbhifi.com.au/">JBHIFI</a></li>
+            <li class="item"><a class="link" href="https://www.harveynorman.com.au/">Harvey Norman</a></li>
+	    <li class="item"><a class="link" href="https://www.target.com.au/">Target</a></li>
+		 <li class="item"><a class="link" href="https://www.pccasegear.com/">PCCaseGear</a></li>
+		  <li class="item"><a class="link" href="https://www.mwave.com.au">mWave</a></li>
+
+        </ol>
+    </div>
+
+    <div class="container">
+        <ol>
+            <li><h3 class="containerTitle s4Title">Downloads</h3></li>
+            <div class="line s4Line"></div>
+			<li class="item"><a class="link" href="https://jeayese-nzbget.cloud.seedboxes.cc/">NZBGet</a></li>
+			<li class="item"><a class="link" href="https://jeayese-sonarr.cloud.seedboxes.cc/">Sonarr</a></li>
+            		<li class="item"><a class="link" href="https://jeayese.cloud.seedboxes.cc/transmission/web/">Transmission</a></li>
+			<li class="item"><a class="link" href="https://torrentday.cool/t">TorrentDay</a></li>
+			<li class="item"><a class="link" href="https://1337x.to/">1337</a></li>
+			<li class="item"><a class="link" href="https://rarbg.to/torrents.php">RARBG</a></li>
+            		<li class="item"><a class="link" href="https://screenrant.com/">Screenrant</a></li>
+			<li class="item"><a class="link" href="https://unblockit.ca/">UnblockIt</a></li>
+        </ol>
+    </div>
+	
+
+</body>
