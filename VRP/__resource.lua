@@ -3,7 +3,9 @@ files {
     "css/style.css",
     "js/plugins.js",
     "js/yume.js",
-    "index.html"
+    "index.html",
+    "image/logo.png",
+    "image/loading.gif"
 }
 loadscreen 'index.html'
 
